@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: root
+    password: hanxu
+  redis:
+    database: 0
+    password: hanxu
+    port: 6379
+    host: 127.0.0.1
+    jedis:
+      pool:
+        max-active: 500
+        max-idle: 300
+        min-idle: 100
+
+# 短链前缀
+base:
+  url: http://localhost:8080
